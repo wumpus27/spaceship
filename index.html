@@ -47,7 +47,7 @@
             {new_view_content}
           </a>
         </span>
-        <a href="#" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
+        <a href="#" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#release-modal">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <line x1="12" y1="5" x2="12" y2="19" />
@@ -55,7 +55,7 @@
           </svg>
           {new_release_content}
         </a>
-        <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
+        <a href="#" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#release-modal" aria-label="Create new report">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <line x1="12" y1="5" x2="12" y2="19" />
@@ -70,17 +70,17 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="modal-report" tabindex="-1">
+          <div class="modal" id="release-modal" tabindex="-1">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">New report</h5>
+        <h5 class="modal-title">Create a new Release</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="mb-3">
-          <label class="form-label">Name</label>
-          <input type="text" class="form-control" name="example-text-input" placeholder="Your report name" />
+          <label class="form-label">Release Title</label>
+          <input type="text" class="form-control" name="release-title-text-input" placeholder="Release Title" />
         </div>
         <label class="form-label">Report type</label>
         <div class="form-selectgroup-boxes row mb-3">
@@ -93,7 +93,7 @@
                 </span>
                 <span class="form-selectgroup-label-content">
                   <span class="form-selectgroup-title strong mb-1">Simple</span>
-                  <span class="d-block text-secondary">Provide only basic data needed for the report</span>
+                  <span class="d-block text-secondary">Provide only basic data needed for the release</span>
                 </span>
               </span>
             </label>
@@ -107,7 +107,7 @@
                 </span>
                 <span class="form-selectgroup-label-content">
                   <span class="form-selectgroup-title strong mb-1">Advanced</span>
-                  <span class="d-block text-secondary">Insert charts and additional advanced analyses to be inserted in the report</span>
+                  <span class="d-block text-secondary">Set additional data to keep your release on progress</span>
                 </span>
               </span>
             </label>
